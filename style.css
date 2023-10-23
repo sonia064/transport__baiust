@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: montserrat;
+  }
+
+
+  .topSide{
+    background-color: #089D49;
+  }
+  
+  .topSide p{
+    font-size: 100%;
+    color: white;
+    padding: 15px;
+  }
+
+  nav{
+    background: #ffff;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+  }
+  label.logo{
+    color: #089D49;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: #089D49;
+    font-size: 17px;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #089D49;
+    transition: .5s;
+    color: #ffff;
+
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: #089D49;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+
+
+  /* Some Facts */
+  .SomeFacts{
+    width: 100%;
+    height: auto;
+    background-color: #089D49;
+    display: flex;
+    flex-direction: row;
+  }
+
+/* Service Part CSS */
+.service {
+  /* background-color: rgba(238, 243, 250, 0.5); */
+  background-color: rgba(230, 233, 238, 0.5);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 100%;
+  padding: 80px;
+  }
+  .service div{
+    /* background-color: #6cce96; */
+    background-color: #ffff;
+    height: auto;
+    border-radius: 5px;
+    padding: 10%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+    text-align: justify;
+    font-family: arial,sans-serif;;
+  }
+  .service h2{
+    text-align: center;
+    color: #0f9161!important;
+    margin-bottom: 4%;
+    text-transform: uppercase;
+    font-size: 120%;
+  }
+  .service p{
+    font-size: 90%;
+    color: #333641;
+    line-height: 145%;
+  }
+  
+  .div1 { 
+    grid-area: 1 / 1 / 2 / 2; 
+  }
+  .div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+  }
+  .div3 { grid-area: 1 / 3 / 2 / 4; }
+  .div4 { grid-area: 1 / 4 / 2 / 5; }
+  .div5 { grid-area: 2 / 1 / 3 / 2; }
+  .div6 { grid-area: 2 / 2 / 3 / 3; }
+  .div7 { grid-area: 2 / 3 / 3 / 4; }
+  .div8 { grid-area: 2 / 4 / 3 / 5; }
+
+  .Sdiv img{
+    width: 40%;
+    height: auto;
+    margin-left: 30%;
+  }
+
+
+
+  .Sdiv:hover{
+    cursor: pointer;
+    background-color: #6cce96;
+    /* border-left: 10px solid #089D49; */
+    transition: 1s;
+    color: #ffff;
+  }
+
+
+
+  /* served */
+
+  .yServed{
+    background-color: #0f9161;
+    text-align: center;
+    color: #ffff;
+    padding: 1%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .served
+  {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 10px;
+      grid-row-gap: 0px;
+      width: 100%;
+      padding: 80px;
+      background-color: #20b887;
+  }
+   
+  .served div{
+    background-color: #ffff;
+    padding: 10%;
+    text-align: center;
+    font-size: 150%;
+    font-family: sans-serif;
+    border-left: 8px solid #0f9161;
+    border-radius: 40px 0px;
+    color: #0f9161;
+  }
+  .div11 { grid-area: 1 / 1 / 2 / 2; }
+  .div12 { grid-area: 1 / 2 / 2 / 3; }
+  .div13 { grid-area: 1 / 3 / 2 / 4; }
+
+
+/* journey-part */
+.journey-part{
+  width: 100%;
+  /* background-color: rgba(230, 233, 238, 0.5); */
+  padding: 10%;
+}
+
+.jCaption{
+  padding: 5%;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-transform: uppercase;
+  font-size: 250%;
+}
+.journey
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+}
+ 
+.journey div{
+  background-color: #ffff;
+  padding: 1%;
+  font-family: sans-serif;
+  color: #0f9161;
+}
+
+.journey img{
+  padding: 5%;
+  width: 50%;
+  height: auto;
+}
+.div21 { grid-area: 1 / 1 / 2 / 2; }
+.div22 { grid-area: 1 / 2 / 2 / 3; }
+.div23 { grid-area: 1 / 3 / 2 / 4; }
+
+.list-disc {
+  list-style-type: disc;
+  color: #333641;
+  font-size: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Information */
+/* <!-- Information  */
+.tc h1{
+  background-color: #0f9161;
+  padding: 1%;
+  text-align: center;
+  color: #ffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tcparent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  padding: 5% 5%;
+  text-align: center;
+  }
+
+  
+  .tcdiv1 { grid-area: 1 / 1 / 2 / 2; }
+  .tcdiv2 { grid-area: 1 / 2 / 2 / 3; }
+  .tcdiv3 { grid-area: 1 / 3 / 2 / 4; }
+.tcparent h2{
+  color: #0f9161;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.tcimg{
+  width: 50%;
+  border-radius: 100%;
+}
+
+/* footer */
+
+.subparent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  padding: 5%;
+  background-color: #333641;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: #ffff;
+  }
+  
+  .subdiv1 { 
+    border: 1px solid #0f9161;
+    padding: 10%;
+    grid-area: 1 / 1 / 2 / 2;
+    box-shadow: 0px 1px 2px #333641;
+  }
+  .subdiv2 { 
+    padding: 10%;
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .subdiv3 { 
+    border: 1px solid #0f9161;
+    padding: 10%;
+    box-shadow: 0px 1px 2px #333641;
+    grid-area: 1 / 3 / 2 / 4; }
+
+
+.fparent {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  background-color: #0f9161;
+  padding: 1%;
+  text-align: center;
+  color: #ffff;
+  }
+
+  .subdiv1 img{
+    width: 15%;
+  }  
+  .subdiv3 img{
+    width: 15%;
+  }
+  
+  .fdiv1 { grid-area: 1 / 1 / 2 / 2; }
+  .fdiv2 { grid-area: 1 / 2 / 2 / 3; }
+  .fdiv3 { grid-area: 1 / 3 / 2 / 4; }
+
+
+
+
+
+    /* complaintBoxform */
+
+    .complaintBoxform{
+      width: 50%;
+      margin-left: 25%;
+      box-shadow: 0px 5px 10px rgba(24, 23, 23, 0.06);
+      padding: 5%;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+
+
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+     
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+    .service{
+      padding: 5%;
+      font-size: 50%;
+    }
+    .service h2, h1{
+      font-size: 90%;
+    }
+
+
+    .yServed{
+      font-size: 90%;
+    }
+    .served
+    {
+        width: 100%;
+        padding: 5%;
+    }
+     
+    .served div{
+      border-radius: 30px 0px;
+      padding: 5%;
+      font-size: 80%;
+    }
+
+
+    .jCaption{
+      padding: 3%;
+      font-size: 100%;
+    }
+
+    .journey div{
+      font-size: 40%;
+    }
+
+    .subparent, .tcparent{
+      font-size: 60%;
+    }
+    .fimg{
+      width: 50%;
+    }
+    .fparent{
+      font-size: 50%;
+    }
+    .tcparent img{
+      width: 45%;
+    }
+    .tcparent h2{
+      font-size: 100%;
+    }
+
+
+    .complaintBoxform{
+      width: 80%;
+      margin-left: 10%;
+      padding: 5%;
+    }
+  }
+
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      margin-top: 40px;
+      height: auto;
+      background: #089D49;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+      z-index: 10;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+      color: #ffff;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #089D49;
+      background-color: #ffff;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }

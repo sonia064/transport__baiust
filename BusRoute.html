@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Route Finder</title>
+    <style>
+      
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff0f0;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #0074d9;
+        }
+
+        .input-container {
+            display: flex;
+            justify-content: center;
+            margin: 1em;
+        }
+
+        input {
+            margin: 0 1em;
+            padding: 0.5em;
+            font-size: 1em;
+            border: 0.1em solid #ccc;
+            border-radius: 0.3em;
+        }
+
+        button {
+            background-color: #0074d9;
+            color: white;
+            border: none;
+            border-radius: 0.3em;
+            padding: 0.5em 1em;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056a7;
+        }
+
+        .route-details {
+            margin: 1em;
+            background-color: #fff;
+            padding: 1em;
+            border: 0.1em solid #ccc;
+            border-radius: 0.3em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Bus Route Finder</h1>
+    <div class="input-container">
+        <input type="text" placeholder="Start Location" id="startLocation">
+        <input type="text" placeholder="End Location" id="endLocation">
+        <button onclick="findBusRoute()">Find Route</button>
+    </div>
+    <div class="route-details" id="routeDetails">
+    </div>
+
+    <script>
+        function findBusRoute() {
+ 
+            const startLocation = document.getElementById("startLocation").value;
+            const endLocation = document.getElementById("endLocation").value;
+
+            // to simulate bus route data
+            const busRoutes = {
+                "Kandirpar to BAUST": ["Kandirpar", "Alekharchor", "Cantonment", "BAIUST"],
+                "Tomsombridge to BAUST": ["Tomsombridge", "Bisshoroad", "Cantonment", "BAIUST"],
+            };
+
+            const routeDetails = document.getElementById("routeDetails");
+            const routeKey = `${startLocation} to ${endLocation}`;
+            const route = busRoutes[routeKey];
+
+            if (route) {
+                routeDetails.textContent = `Bus Route from ${routeKey}: ${route.join(" -> ")}`;
+            } 
+            else {
+                routeDetails.textContent = "Route not found.";
+            }
+        }
+    </script>
+</body>
+</html>

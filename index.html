@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transposrt | BAIUST</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/homePageSlider.css">
+    <link rel="shortcut icon" href="images/busimages01.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+
+    <div class="topSide">
+        <p>Help Line - +880 188 818 2231</p>
+    </div>
+    <div>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+              <i class="fas fa-bars"></i>
+            </label>
+            <label class="logo">T-Service</label>
+            <ul>
+              <li><a class="active" href="#">Home</a></li>
+              <li><a href="https://6536be491f57056ed681275b--earnest-granita-81d7a4.netlify.app/">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+          <section></section>
+    </div>
+
+<!-- Slide Part -->
+    <div class="content">
+        <div class="images">
+           <img src="images/busimages01.png">
+           <img src="images/busimages02.png">
+           <img src="images/busimages03.png">
+           <img src="images/busimages04.png">
+           <img src="images/busimages09.png">
+        </div>
+        <div class="btm-slides">
+           <span onclick="btm_slide(1)"></span>
+           <span onclick="btm_slide(2)"></span>
+           <span onclick="btm_slide(3)"></span>
+           <span onclick="btm_slide(4)"></span>
+           <span onclick="btm_slide(5)"></span>
+        </div>
+        <div class="sliders left" onclick="side_slide(-1)">
+           <span class="fas fa-angle-left"></span>
+        </div>
+        <div class="sliders right" onclick="side_slide(1)">
+           <span class="fas fa-angle-right"></span>
+        </div>
+     </div>
+
+     <!-- Js for Slider -->
+     <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function btm_slide(e){showImg(indexValue = e);}
+      function side_slide(e){showImg(indexValue += e);}
+      function showImg(e){
+        var i;
+        const img = document.querySelectorAll('img');
+        const slider = document.querySelectorAll('.btm-slides span');
+        if(e > img.length){indexValue = 1}
+        if(e < 1){indexValue = img.length}
+        for(i = 0; i < img.length; i++){
+          img[i].style.display = "none";
+        }
+        for(i = 0; i < slider.length; i++){
+          slider[i].style.background = "rgba(255,255,255,0.1)";
+        }
+        img[indexValue-1].style.display = "block";
+        slider[indexValue-1].style.background = "white";
+      }
+   </script>
+
+
+     <!-- Service Funtion -->
+   <div class="service">
+         <a href="busSchedulind.html">
+            <div class="Sdiv div1">
+               <img src="images/bus sc.png" alt="">
+               <h2>Bus Schedulind</h2>
+               <p>Our sophisticated bus scheduling in Spring 2023 minimizes wait times, ensuring timely and efficient student transportation for seamless journeys.</p>
+            </div>
+         </a>
+         <a href="https://653685e77e8a322678377dfb--stirring-lolly-79d8f2.netlify.app/">
+            <div class="Sdiv div2">
+               <img src="images/registration.png" alt="">
+               <h2>Registration</h2>
+               <p>Click here for hassle- registration of your transport, streamlining your journey and ensuring convenience at every step, and experience the future of seamless travel with our --<br>   </p>
+            </div>
+         </a>
+         <a href="https://sonia064.github.io/repo_validation/">
+            <div class="Sdiv div3">
+               <img src="images/validation 1.png" alt="">
+               <h2>Validation</h2>
+               <p>The validation system checks if a student is real and eligible for certain things. It looks at their information and decides quickly, making sure everything is right. </p>
+            </div>
+         </a>
+         <a href="https://transport-seat-booking.netlify.app/?fbclid=IwAR3AEjTQA_g5uBp3I3RatOlgBRa447aAFqlOkOJwWxAb66wYrViI1DlA-iI">
+            <div class="Sdiv div4">
+               <img src="images/seat booking.png" alt="">
+               <h2>Seat Booking</h2>
+               <p>The seat booking system for the varsity bus allows students to choose and reserve their seats in advance. This means no one has to worry about finding a place to ..... <br>
+              </p>
+            </div>
+         </a>
+         <a href="#">
+            <div class="Sdiv div5">
+               <img src="images/gps.png" alt="">
+               <h2>GPS</h2>
+               <p>The GPS system on the varsity bus ensures accurate tracking of its location and route. This help students stay updated on their bus's whereabouts.</p>
+            </div>
+         </a>
+         <a href="BusRoute.html">
+            <div class="Sdiv div6">
+               <img src="images/bus routes.png" alt="">
+               <h2>BUS ROUTES</h2>
+               <p>The university bus route system is designed to provide reliable transportation across campus. It optimizes routes for convenience  travel for students and staff. 
+               </p>
+            </div>
+         </a>
+         <a href="complaintBox.html">
+            <div class="Sdiv div7">
+               <img src="images/complaint.png" alt="">
+               <h2>Complain box</h2>
+               <p>The university bus route system is designed to provide reliable transportation across campus. It optimizes routes for convenience travel for students and staff. </p>
+            </div>
+         </a>
+         <a href="gallery.html">
+            <div class="Sdiv div8">
+               <img src="images/GALLERY.png" alt="">
+               <h2>GALLERY</h2>
+               <p>The bus gallery for university students displays snapshots of available buses, helping you choose your preferred transportation option with ease.</p>
+            </div>
+         </a>
+   </div>
+
+
+   <!--served-->
+   <h1 class="yServed">WE ARE PROUD TO HAVE YOU SERVED</h1>
+   <div class="served">
+      <div class="div11"> 
+         <h2>750++</h2><br>
+         <p>TICKETS SOLD</p>
+      </div>
+      <div class="div12"> 
+         <h1>5++</h1><br>
+         <p>DESTINATION SERVED</p>
+      </div>
+      <div class="div13"> 
+         <h1>30++</h1><br>
+         <p>TRIPS DAILY</p>
+      </div>
+   </div>
+
+   <div class="journey-part">
+      <h1 class="jCaption">Easy steps to enjoy journey</h1>
+      <div class="journey">
+         <div class="div21"> 
+            <img src="images/journey01.png" alt="">
+            <h2>Search Destination!</h2><br>
+            <ul class="list-disc">
+               <li>Go to Jatri Website: https://ticket.jatri.co</li>
+               <li>Select your location</li>
+               <li>Select Bus Type</li>
+               <li>Select the date of your journey</li>
+               <li>Select the date of your journey</li>
+               <li>Select the date of your journey</li>
+            </ul>
+         </div>
+         <div class="div22"> 
+            <img src="images/journey02.png" alt="">
+            <h2>Select Ticket!</h2><br>
+            <ul class="list-disc">
+               <li>Click the View Seats option</li>
+               <li>Select your location</li>
+               <li>Select Bus Type</li>
+               <li>Select the date of your journey</li>
+            </ul>
+         </div>
+         <div class="div23"> 
+            <img src="images/journey03.png" alt="">
+            <h2>Pay and Enjoy</h2><br>
+            <ul class="list-disc">
+               <li>Go to Jatri Website: https://ticket.jatri.co</li>
+               <li>Select your location</li>
+               <li>Select Bus Type</li>
+               <li>Select the date of your journey</li>
+            </ul>
+         </div>
+      </div>
+   </div>
+   
+
+   <!-- Information -->
+   <div class="tc">
+      <h1>MANAGEMENT PROFILES</h1>
+      <div class="tcparent">
+         <div class="tcdiv1">
+            <img class="tcimg" src="images/Roni Sir.png" alt="">
+            <h2>Md. Abul Hasan Roni</h2>
+            <p>Transport Coordinatior</p>
+            <p>BAIUST, Cumilla <br>
+               roni.scnhum@baiust.ac.bd</p>
+         </div>
+         <div class="tcdiv2"> 
+            <img class="tcimg" src="images/arman.png" alt="">
+            <h2>Md. Yasir Arafat Arman</h2>
+            <p>Transport Coordinatior</p>
+            <p>BAIUST, Cumilla <br>
+               arman.scnhum@baiust.ac.bd</p>
+         </div>
+         <div class="tcdiv3"> 
+            <img class="tcimg" src="images/Roni Sir.png" alt="">
+            <h2>Md. Abul Hasan Roni</h2>
+            <p>Transport Coordinatior</p>
+            <p>BAIUST, Cumilla <br>
+               roni.scnhum@baiust.ac.bd</p>
+         </div>
+      </div>
+   </div>
+    
+
+   <div class="sub-footer">
+      <div class="subparent">
+         <div class="subdiv1"> 
+            <img src="images/icon-phone-mail.png" alt="">
+            <h3>CONTACT US</h3>
+            <h4>+88 017369 38452</h4>
+            <h4>G-Mail:sadd@gmail.com</h4>
+         </div>
+         <div class="subdiv2"> 
+            <img class="fimg" src="images/BAIUST-logo.png" alt="">
+         </div>
+         <div class="subdiv3"> 
+            <img src="images/address.png" alt="">
+            <h3>OFFICE ADDRESS</h3>
+            <h4>BAIUST CAMPUS</h4>
+            <h4>Cumilla</h4>
+         </div>
+      </div>
+   </div>
+
+   <footer>
+      <div class="fparent">
+         <div class="fdiv1"> 
+            <p>©2023 BAIUST T-Service. All rights reserved.</p>
+         </div>
+         <div class="fdiv2"> 
+            <p>Terms of Use
+               |
+               Privacy Policy
+               |
+               Follow us on
+            </p>
+         </div>
+         <div class="fdiv3"> 
+            <p>Developed with by SAAD GROUP</p>
+         </div>
+         </div>
+   </footer>
+   <script src="javaScript.js"></script>
+</body>
+</html>

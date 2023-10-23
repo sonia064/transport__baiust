@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.search-part{
+    width: 60%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06);
+    margin-left: 20%;
+    padding: 5% 5%;
+    border-radius: 20px;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    padding: 10px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    margin-top: 10px;
+    display: block;
+    padding: 0% 2%;
+    
+}
+
+.submited{
+    background-color: #089D49;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.submited:hover{
+    background-color: #0a5a2d;
+    transition: 1s;
+}
+
+@media (max-width: 952px){
+    .search-part{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
